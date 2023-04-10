@@ -36,6 +36,7 @@ module my_counter(
         
     always @ (posedge clock) begin
         if (one_dv == 32'd49_999_999) begin
+            // need to be smaller time scale for simulation
             one_dv <= 0;
             one_clock <= ~one_clock;
         end
