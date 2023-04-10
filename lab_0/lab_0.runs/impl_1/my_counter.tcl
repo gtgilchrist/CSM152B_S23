@@ -60,18 +60,24 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/Users/Student/Desktop/lab_0/lab_0.runs/impl_1/my_counter.dcp
-  set_property webtalk.parent_dir C:/Users/Student/Desktop/lab_0/lab_0.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Student/Desktop/lab_0/lab_0.xpr [current_project]
-  set_property ip_output_repo C:/Users/Student/Desktop/lab_0/lab_0.cache/ip [current_project]
+  create_project -in_memory -part xc7a35tcpg236-1
+  set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_0/lab_0.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_0/lab_0.xpr [current_project]
+  set_property ip_output_repo C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_0/lab_0.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_0/lab_0.runs/synth_1/my_counter.dcp
+  read_xdc C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_0/lab_0.srcs/constrs_1/imports/lab_0/Basys-3-Master.xdc
+  link_design -top my_counter -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

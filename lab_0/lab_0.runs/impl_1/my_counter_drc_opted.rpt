@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Apr  5 13:39:50 2023
+| Date         : Mon Apr 10 12:52:41 2023
 | Host         : CS152B-08 running 64-bit major release  (build 9200)
 | Command      : report_drc -file my_counter_drc_opted.rpt -pb my_counter_drc_opted.pb -rpx my_counter_drc_opted.rpx
 | Design       : my_counter
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_my_counter
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

@@ -26,11 +26,25 @@ module my_counter(
     input enable,
     output reg [3:0] counter_0
     );
+    
     initial begin
         counter_0 = 4'b0000;
     end
+    
+    reg [31:0] one_dv=0;
+    reg one_clock=0;
         
-    always @(posedge clock) begin
+    always @ (posedge clock) begin
+        if (one_dv == 32'd49_999_999) begin
+            one_dv <= 0;
+            one_clock <= ~one_clock;
+        end
+        else begin
+            one_dv <= one_dv + 1;
+        end    
+    end
+        
+    always @(posedge one_clock) begin
         if(reset)
             counter_0 <= 4'b0000;
         else if(enable)

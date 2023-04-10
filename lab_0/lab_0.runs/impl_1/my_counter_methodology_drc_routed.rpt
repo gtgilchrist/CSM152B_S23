@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Apr  5 13:40:13 2023
+| Date         : Mon Apr 10 12:53:04 2023
 | Host         : CS152B-08 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file my_counter_methodology_drc_routed.rpt -pb my_counter_methodology_drc_routed.pb -rpx my_counter_methodology_drc_routed.rpx
 | Design       : my_counter
@@ -20,46 +20,36 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_my_counter
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 6
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 6          |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 4
++-----------+----------+-----------------------------+------------+
+| Rule      | Severity | Description                 | Violations |
++-----------+----------+-----------------------------+------------+
+| TIMING-17 | Warning  | Non-clocked sequential cell | 4          |
++-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-18#1 Warning
-Missing input or output delay  
-An input delay is missing on enable relative to clock(s) sys_clk_pin
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin counter_0_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-18#2 Warning
-Missing input or output delay  
-An input delay is missing on reset relative to clock(s) sys_clk_pin
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin counter_0_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-18#3 Warning
-Missing input or output delay  
-An output delay is missing on counter_0[0] relative to clock(s) sys_clk_pin
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin counter_0_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-18#4 Warning
-Missing input or output delay  
-An output delay is missing on counter_0[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#5 Warning
-Missing input or output delay  
-An output delay is missing on counter_0[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#6 Warning
-Missing input or output delay  
-An output delay is missing on counter_0[3] relative to clock(s) sys_clk_pin
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin counter_0_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 

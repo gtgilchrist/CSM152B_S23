@@ -46,7 +46,7 @@ module my_counter_tb(
     end   
     
     always 
-        clk = #5 ~clk;
+        clk = #1 ~clk;
         
     
     

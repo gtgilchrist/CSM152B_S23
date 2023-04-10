@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1680727158">
-  <File Type="OPT-HWDEF" Name="my_counter.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="my_counter_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="my_counter.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1681156293">
   <File Type="BITSTR-BMM" Name="my_counter_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="my_counter_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="my_counter_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="my_counter_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="my_counter_reports.tcl"/>
   <File Type="OPT-DRC" Name="my_counter_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="my_counter.hwdef"/>
   <File Type="PWROPT-DCP" Name="my_counter_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="my_counter_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="my_counter_timing_summary_pwropted.rpt"/>
@@ -24,6 +22,7 @@
   <File Type="PLACE-CTRL" Name="my_counter_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="my_counter_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="my_counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="my_counter.bgn"/>
   <File Type="PLACE-TIMING" Name="my_counter_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="my_counter_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="my_counter.bin"/>
@@ -53,6 +52,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="my_counter_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="my_counter_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="my_counter_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="my_counter_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="my_counter_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="my_counter_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="my_counter_postroute_physopt.dcp"/>
@@ -66,7 +66,6 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="my_counter_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="my_counter.rbt"/>
   <File Type="BITSTR-NKY" Name="my_counter.nky"/>
-  <File Type="BG-BGN" Name="my_counter.bgn"/>
   <File Type="BG-DRC" Name="my_counter.drc"/>
   <File Type="RDI-RDI" Name="my_counter.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

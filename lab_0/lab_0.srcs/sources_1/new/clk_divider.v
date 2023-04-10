@@ -21,6 +21,20 @@
 
 
 module clk_divider(
-
+    input clock, 
+    output reg one_clk
     );
+    
+    reg [31:0] one_dv=0;
+    
+    always @ (posedge clock) begin
+        if (one_dv == 32'd49_999_999) begin
+            one_dv <= 0;
+            one_clk <= ~one_clk;
+        end
+        else begin
+            one_dv <= one_dv + 1;
+        end    
+    end
+    
 endmodule
