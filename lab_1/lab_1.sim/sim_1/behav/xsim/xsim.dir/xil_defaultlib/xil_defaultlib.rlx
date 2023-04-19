@@ -3,5 +3,8 @@
 Jun 14 2018
 20:41:02
 C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sim_1/new/addbit_tb.v,1681329357,verilog,,,,addbit_tb,,,,,,,,
-C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/addbit.v,1681328880,verilog,,C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sim_1/new/addbit_tb.v,,addbit,,,,,,,,
+C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sim_1/new/addbit_tb.v,1681329549,verilog,,,,addbit_tb,,,,,,,,
+C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sim_1/new/alu16_tb.v,1681763562,verilog,,,,alu16_tb,,,,,,,,
+C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/addbit.v,1681328880,verilog,,C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/addition.v,,addbit,,,,,,,,
+C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/addition.v,1681332167,verilog,,C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/alu16.v,,addition,,,,,,,,
+C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sources_1/new/alu16.v,1681764224,verilog,,C:/Users/Student/Documents/GitHub/CSM152B_S23/lab_1/lab_1.srcs/sim_1/new/alu16_tb.v,,alu16,,,,,,,,
