@@ -1,4 +1,4 @@
-
+`timescale 1ns / 1ps
 module bOR(
     input [15:0] A,
     input [15:0] B,
